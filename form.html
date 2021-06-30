@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fill The Form</title>
+</head>
+<body>
+    <h2> User Details
+    </h2>
+    <p>Fields marked with * are must to fill.</p>
+    <fieldset>
+        <legend > Personalia   </legend>
+            <form action = "userdetail.html" method = "GET"  target="_blank">
+            <label for = "pic">Upload your picture : &ensp; &ensp;</label>
+            <input type = "file" name = "pic" id = "pic" value = ""><br><br>
+            <label for = "fname">First Name :  &ensp; &ensp; *</label>
+            <input type = "text" id = "fname" name = "fname" value = "" required><br><br>
+            <label for = "lname">Last Name :   &ensp; &ensp; </label>
+            <input type = "text " name = "lname" id = "lname" value = ""><br><br>
+            <label for = "dob">Date Of Birth :  &ensp; &ensp; </label>
+            <input type = "date" name = "dob" id = "dob" value = ""> <br><br>
+            <label for = gender>Gender : &ensp; &ensp; </label>
+            <label for = "male">Male</label>
+            <input type = "radio" name = "gender" id = "gender" value = "Male">
+            <label for = "female" >Female</label>
+            <input type = "radio" name = "gender" id = "female" value = "Female"><br><br>
+            <label for = "number">Contact No. :  &ensp; *</label>
+            <input type = "tel" name = "number" id = "number" value = "" required ><br><br>
+            <label for = "mail">Email ID :  &ensp; *</label>
+            <input type = "email" name = "mail" id = "mail" value = "" required ><br><br>
+            <label for = "color">Favourite color : &ensp; &ensp;</label>
+            <input type = "color" name = "color" id = "color" value = ""><br><br>
+            <label for="flang">Select your favourite language : &ensp; &ensp;</label>
+            <select id="flang" name="flang" value = "">
+              <option value="C++">C++</option>
+              <option value="Java">Java</option>
+              <option value="Python">Python</option>
+              <option value="C">C</option>
+            </select>
+            <br><br>
+            <label for = "addr">Address :-  <br> &ensp;</label>
+            <textarea name = "addr" id = "addr" rows = "5" cols = "50">
+            </textarea><br><br>
+            <label for = "pass">Password : &ensp;</label>
+            <input type = "password" name = "pass" id = "pass" value = "">
+            <br><br>
+            <input type = "Submit" value = "Submit">
+            <input type = "reset">
+        </form>
+      
+    </fieldset>
+    <br> <br>  
+    <a href = 'index.html'><h4>Click here to go to home page</h4></a>
+    <br><br>
+</body>
+</html>
