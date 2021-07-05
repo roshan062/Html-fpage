@@ -2,167 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <title>Rosh Talk</title>  
-     <style>
-        table, tr,th, td {
-          border: 1px solid rgb(46, 23, 4);
-          border-collapse : collapse;}
-          th,td{padding : 10px
-        }
-        #t01 {
-  width: 10%;    
-  background-color: #adebdb;
-}
-        </style>            <!-- This is comment. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="Pictures/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 </head>
-</head>
-<body><br>
-    <img src="/Pictures/Roshan-pic1.png" height="200px" width="200x" alt="Roshan Profile"><br>
- <h1 style="color:red;"  id = "up">  Roshan Yadav</h1>
- <hr>
- <br>
- <p>I am building my first Html website step by step.</p>   
- <p>Here, I am starting with writing a paragraph using < p > tag in HTML. Also, I am using <strong>strong tag to bold these words instead of < b >tag</strong>. 
-    Then, I have option to use < i > tag to italic the text but i am using < em > <em> tag to italic.</em>.
-     Now, I am proceeding with some other tags to use in my website which i will specify you below :-</p>
-    <hr>
-     <h3>Tags in Unordered list</h3>
-          <ul>
-         <li>Strong/bold tag</li>
-         <li>Emphasize/italic tag</li>
-         <li>Paragraph tag</li>
-             <ul>
-                 <br>
-                 <li>Showing</li>
-                 <li>Nested unordered</li>
-                 <li>Tag</li>
-                    <ul>
-                        <li> Third Unordered nested.</li>
-                    </ul>
-             </ul>
-     </ul>
-     <h3>Tags in ordered lists</h3>
-     <ol>
-         <li>Meta tag</li>
-         <li>Title tag</li>
-         <li>Title tag</li>
-         <li>Body tag</li>
-         <br>
-           <ol>
-               <li>Second nested in Ordered list tag.</li>
-               <li>It will come in numbers again by default.</li>
-               <li>It will not change symbols automatically like in unordered lists. </li>
-               <br>
-                 <ol>
-                     <li>It will show lists in numbers only in further listings also until we dont change to Roman, alphabets, etc.</li>
-                 </ol>
-           </ol>
-     </ol>
-     <br>
+<body>
+  <div class="top">
+    <img class="cloud1" src="Pictures/cloud.png" alt="Cloud1">
+      <h1><span style="font-weight: 500;">I'm </span> Roshan</h1>
+      <p class="headpara">a web developer</p>
+  
+      <img class="cloud2" src="Pictures/cloud.png" alt="Cloud2">
+      <img class="cloud3" src="Pictures/cloud.png" alt="Cloud2">
+      <img class="mount" src="Pictures/mountain.png" alt="Mountain">
 
-     <ol reversed>
-         <li>Here, list will showed but the numbers will be in reverse order</li>
-         <li>Because I had used reversed attribute with ol tag.</li>
-         <li>Next, I will show you start attribute in ol tag.</li>
-     </ol>
-     <br>
-     <ol start = "11" type = "A">
-        <li>Here, I used start and type attribute together with ol tag</li>
-        <li>This attribute is used to start the numbers of listing from the number we want.</li> 
-        <li>Type attribute is used to define the type of listing i.e A,a,i,etc.</li>
-     </ol>
-     <br><p>There are 3 others types of tags(dl, dt, dd) also present in Lists tag.
-          I will use these three tags only to explain these tags below :- </p>
-     <dl>
-        <dt>dl</dt><dd>This is used to provide description list</dd>
-        <dt>dt</dt><dd>This is used to give description terms.</dd>
-        <dt>dd</dt><dd>This is used to define description terms. </dd>
-        </dl>
-     </ol>
-     <br>
-     <hr>
-     <h3>Now, I wil add a image here using < img > tag.</h3>
-     <h4>I had also used alt, width and height attributes with img tag.</h4>
-     <img src = "data:image/png;base64,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 v7Scw6grWJ9k39T6coPL
-     0uAmB68ODFjk0+suUuXLlypUrV65cuXLlypUrV65e+h+9ID0zR/liJwAAAABJRU5ErkJggg==" alt = "Image not found." width = "300" height = "200">
-      <br>
-      <hr>
-      <h3>Moving to next, I will add a hyperlink using anchor tag along with it's href attribute.</h3>
-      <a href = "https://www.w3schools.com/html/">Visit W3School Website by clicking on this hyperlink.</a>
-    <br>
-    <p>Now, I will add download attribute in anchor tag which downloads the item directly, after clicking on the hyperlink.</p>
-    <a href =  "data:image/png;base64,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" download >
-    <img src = "data:image/png;base64,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
-    TkSuQmCC" download><br><b>Click here or on image to download .</b></a> 
-    <br>
-    <hr>
-    <p>Now, I'll show you the use of < abbr > tag with title attrbute to abbreviate the words.
-     My name is <abbr title = "Roshan Yadav"><b>RY</b></abbr></p>
-     <br>
-     <p>Let's create a table using < table > tag. wen have to use < tr > tag in table tag to add row and 
-    < td > tag to add table data (column). </p>
-    <br>
+  </div>
+  <div class="backcolor-only">
+    <div class="middle">
+        <div class="profile">
+          <img class="rosh-profile-pic" src="Pictures/roshan-pic1.png" alt="Profile-picture" height="200px" width="200px">
+          <h2>Hi, I'm Roshan</h2>
+          <p>A full stack web developer, android developer, freelancer and open-source enthusiast. Over time, I 
+              gained a wealth of experience designing and developing web and mobile applications. </p>
+        </div>
+         <hr> <br> <br><br><br>
+        <div class="skills">
+              <img class="skill-logo" src="/Pictures/skills.png" alt="Skill-logo"  height="200px" width="200px">
+              <h2 style="line-height: 4;">My Skills -</h2>
+              <div class="html"> 
+                   <img class="" src="Pictures/Html-Logo.png" alt="html-logo"  height="70px" width="70px">
+                   <h4>HTML </h4>
+              </div> 
 
+              <div class="css">  
+                    <img class="" src="Pictures/Css-Logo.png" alt="css-logo"  height="70px" width="70px">
+                    <h4>CSS </h4>
+              </div> 
 
-    <table cellspacing = "10" cellpadding="1" id = "t01">
-        <caption>College Table</caption>                  <!--caption tag -->
-    <thead>
-    <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Subject</th>
-            <th>Rank</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Roshan Yadav</td>    
-            <td>C++</td>                           <!-- table data tag -->
-            <td>⭐⭐⭐⭐⭐</td>   
-        </tr>
+              <div class="bootstrap">  
+                    <img class="" src="Pictures/Bootstrap-Logo.png" alt="bootstrap-logo"  height="65px" width="65px">
+                    <h4>Bootstrap </h4>
+              </div> 
+
+              <div class="javascript">  
+                    <img class="" src="Pictures/Javascript-Logo.png" alt="js-logo"  height="65px" width="65px">
+                    <h4>Javascript</h4>
+              </div>
+        </div>
+    </div>  </div> 
+    
+      <div class="bottom">
+
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>" Design is not just what it looks like & feels like. Design is how it works. "</h3><br>
+            
+            <a class="btn" href="mailto:roshanprasad062@gmail.com">CONTACT ME</a>
+          </div><br>
+
+        <a class="footer-link" href="">LinkedIn |</a>
+        <a class="footer-link" href=""> Twitter |</a>
+        <a class="footer-link" href=""> Github</a>
+        <br><br>
+        <p style="font-size: 14px; color: teal;">© 2021 Roshan Yadav.</p>
+      </div>
       
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>2</td>
-        <td>Ravi</td>
-        <td>Java</td>
-        <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td colspan="4">Total  5 *</td>
-        </tr>
-    </tfoot>
-    </table>
-    <hr><br>
-    <fieldset style="background-color:rgba(243, 214, 120, 0.938);" >
-        <a href ="form.html" target = "_blank"><b>Click here to go 
-        to Fill Contact Form page.</b></a>
-        </fieldset > 
-
-    <br><p>&ensp;<a href = "#up">Click here to go to starting of the page.</a></p>
-    <br><br>
-
-    <a href="imagemapping.html" target="_blank"><b>Click here to goto imagemapping page.</b></a>
-    <br><br><hr><br>
-
-    <h4>Now, we will use iframe tag, to embed a website.</h4>
-    <p>I will embed my form web page here below :-</p>
-    <iframe src="form.html" height="300" width="500" title="Iframe Example" name="iframe1"></iframe>
-
-    <br><hr><br>
-    <p>Now, We are going to add a video and audio in our web page using video and audio tag.</p>
-    <a href="media.html" target="_blank"><big><i>Click here</i></big></a> to goto multimedia page.
-    <br><br><br>
 </body>
 </html>
-
-
